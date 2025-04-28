@@ -2,26 +2,26 @@
 
 Basic repository to demonstrate how to set up Magnitude test cases.
 
-You must first make sure to add the proper LLM keys to your .env
-Please follow the [Configure LLMs section](https://github.com/magnitudedev/magnitude?tab=readme-ov-file#configure-llms) in the main Magnitude repo
-
 ## Running locally
 1. Clone repo:
 ```
 git clone https://github.com/magnitudedev/magnitude-demo-repo.git
 ```
 
-2. Install deps
+2. Add LLM keys to .env file
+Please follow the [Configure LLMs section](https://github.com/magnitudedev/magnitude?tab=readme-ov-file#configure-llms) in the main Magnitude repo.
+
+3. Install deps
 ```
 npm i
 ```
 
-3. Start local server (in a separate terminal)
+4. Start local server (in a separate terminal)
 ```
 npm run dev
 ```
 
-3. Run Magnitude against the local server
+5. Run Magnitude against the local server
 ```
 npx magnitude
 ```
