@@ -2,6 +2,9 @@
 
 Basic repository to demonstrate how to set up Magnitude test cases.
 
+You must first make sure to add the proper LLM keys to your .env
+Please follow the [Configure LLMs section](https://github.com/magnitudedev/magnitude?tab=readme-ov-file#configure-llms) in the main Magnitude repo
+
 ## Running locally
 1. Clone repo:
 ```
@@ -22,8 +25,6 @@ npm run dev
 ```
 npx magnitude
 ```
-
-> Make sure you have a MAGNITUDE_API_KEY in your env, which you grab here https://app.magnitude.run/signup
 
 
 ## GitHub Actions
