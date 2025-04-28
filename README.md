@@ -9,6 +9,7 @@ git clone https://github.com/magnitudedev/magnitude-demo-repo.git
 ```
 
 2. Add LLM keys to .env file
+
 Please follow the [Configure LLMs section](https://github.com/magnitudedev/magnitude?tab=readme-ov-file#configure-llms) in the main Magnitude repo.
 
 3. Install deps
