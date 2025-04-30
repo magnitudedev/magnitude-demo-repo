@@ -12,13 +12,15 @@ test('can add a todo')
         .check('Todo appears')
 
 test('can mark todos complete')
-    .step('Add a todo')
-    .step('Mark the todo as done')
-        .check('Check that it appears to be marked complete, and that completed count is 1')
+    .step('Add three todos')
+        .data(sampleTodos.join(", "))
+    .step('Mark each todo as done')
+        .check('Every todo is checked off and completed count is 3')
 
 test('can add multiple todos')
     .step('Create 3 todos')
         .data(sampleTodos.join(", "))
         .check('Todo total count should be 3')
-
+    .step('Delete all todos')
+        .check('No todos left')
 

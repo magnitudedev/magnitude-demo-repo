@@ -1,12 +1,18 @@
 /* App.css */
+body { /* Apply base font size increase */
+  font-size: 18px; /* Increased base font size */
+}
+
 .todo-container {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 700px; /* Increased max-width */
+  margin: 60px auto; /* Increased margin */
+  padding: 30px; /* Increased padding */
 }
 
 .todo-heading {
   text-align: center;
+  font-size: 2.5em; /* Increased heading size */
+  margin-bottom: 30px; /* Added margin */
 }
 
 .todo-input-container {
@@ -16,17 +22,19 @@
 
 .todo-input {
   flex: 1;
-  padding: 10px;
-  border-radius: 4px 0 0 4px;
-  border: 1px solid #ccc;
+  padding: 15px; /* Increased padding */
+  font-size: 1.1em; /* Increased font size */
+  border-radius: 6px 0 0 6px; /* Slightly larger radius */
+  border: 1px solid #333;
 }
 
 .add-button {
-  padding: 10px 15px;
+  padding: 15px 20px; /* Increased padding */
+  font-size: 1.1em; /* Increased font size */
   background-color: green;
   color: white;
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 6px 6px 0; /* Slightly larger radius */
   cursor: pointer;
 }
 
@@ -45,9 +53,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding: 15px; /* Increased padding */
   border-bottom: 1px solid #eee;
-  margin-bottom: 8px;
+  margin-bottom: 12px; /* Increased margin */
+  font-size: 1.1em; /* Increased font size for item text */
 }
 
 .todo-content {
@@ -55,9 +64,39 @@
   align-items: center;
 }
 
+/* Custom Checkbox Styles */
 .todo-checkbox {
-  margin-right: 10px;
+  appearance: none; /* Hide default checkbox */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 2px solid #333; /* Make border thicker */
+  padding: 10px; /* Increase clickable area / size */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 15px; /* Increased margin */
+  border-radius: 3px; /* Optional: slightly rounded corners */
+  vertical-align: middle; /* Align with text */
 }
+
+.todo-checkbox:checked {
+  background-color: #007bff; /* Color when checked */
+  border-color: #007bff;
+}
+
+.todo-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 6px; /* Position checkmark */
+  top: 2px;  /* Position checkmark */
+  width: 6px;  /* Checkmark width */
+  height: 12px; /* Checkmark height */
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+/* End Custom Checkbox Styles */
 
 .todo-text {
   color: black;
@@ -72,8 +111,9 @@
   background-color: red;
   color: white;
   border: none;
-  padding: 5px 8px;
-  border-radius: 4px;
+  padding: 8px 12px; /* Increased padding */
+  font-size: 0.9em; /* Adjust font size if needed */
+  border-radius: 5px; /* Slightly larger radius */
   cursor: pointer;
 }
 
@@ -84,5 +124,5 @@
   padding-top: 10px;
   border-top: 1px solid #eee;
   color: #666;
-  font-size: 14px;
+  font-size: 1.0em; /* Increased font size */
 }
